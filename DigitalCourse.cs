@@ -17,7 +17,7 @@ namespace CourseManagementSystem_v1
             
         }
 
-        public void DisplayDigitalCourseInfo()
+        public override void DisplayCourseInfo()
         {
             Console.WriteLine($"Course Id: {CourseId}\n Title: {Title}\n Duration: {Duration}\n Price: {Price}\n Course Link: {CourseLink}\n File Size: {FileSize}");
         }

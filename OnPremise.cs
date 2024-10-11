@@ -15,7 +15,7 @@ namespace CourseManagementSystem_v1
         {
         }
 
-        public void DisplayOnPremiseCourseInfo()
+        public override void DisplayCourseInfo()
         {
             Console.WriteLine($"Course Id: {CourseId}\n Title: {Title}\n Duration: {Duration}\n Price: {Price}\n Schedule: {Schedule}\n Classroom Capacity: {ClassroomCapacity}");
         }

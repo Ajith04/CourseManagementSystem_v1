@@ -25,6 +25,11 @@ namespace CourseManagementSystem_v1
         {
             return $"Course Id: {CourseId}, Title: {Title}, Duration: {Duration}, Price: {Price}";
         }
+
+        public virtual void DisplayCourseInfo()
+        {
+            Console.WriteLine($"Course Id: {CourseId}\n Title: {Title}\n Duration: {Duration}, Price: {Price}");
+        }
     }
 
    
