@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace CourseManagementSystem_v1
 {
     internal class Course
     {
+        public static int TotalCourses { get; set; }
         public string CourseId;
         public string Title;
         public string Duration;
@@ -19,6 +21,7 @@ namespace CourseManagementSystem_v1
             Title = title;
             Duration = duration;
             Price = price;
+            TotalCourses++;
         }
 
         public override string ToString()
@@ -26,9 +29,9 @@ namespace CourseManagementSystem_v1
             return $"Course Id: {CourseId}, Title: {Title}, Duration: {Duration}, Price: {Price}";
         }
 
-        public virtual void DisplayCourseInfo()
+        public virtual string DisplayCourseInfo()
         {
-            Console.WriteLine($"Course Id: {CourseId}\n Title: {Title}\n Duration: {Duration}, Price: {Price}");
+            return $"Course Id: {CourseId}\n Title: {Title}\n Duration: {Duration}, Price: {Price}";
         }
     }
 

@@ -17,9 +17,9 @@ namespace CourseManagementSystem_v1
             
         }
 
-        public override void DisplayCourseInfo()
+        public override string DisplayCourseInfo()
         {
-            Console.WriteLine($"Course Id: {CourseId}\n Title: {Title}\n Duration: {Duration}\n Price: {Price}\n Course Link: {CourseLink}\n File Size: {FileSize}");
+           return base.DisplayCourseInfo() + $"Link: {CourseLink}\n File Size: {FileSize}";
         }
     }
 

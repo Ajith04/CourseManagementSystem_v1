@@ -14,6 +14,7 @@ namespace CourseManagementSystem_v1
             //Course course1 = new Course("C_001", "python for beginners", "3 months", 10);
             //Console.WriteLine(course1);
             //Console.ReadKey();
+            Console.WriteLine(Course.TotalCourses);
 
             bool repeat = false;
             while (!repeat)
