@@ -14,5 +14,10 @@ namespace CourseManagementSystem_v1
         public OnPremise(string courseId, string title, string duration, decimal price) : base(courseId, title, duration, price)
         {
         }
+
+        public void DisplayOnPremiseCourseInfo()
+        {
+            Console.WriteLine($"Course Id: {CourseId}\n Title: {Title}\n Duration: {Duration}\n Price: {Price}\n Schedule: {Schedule}\n Classroom Capacity: {ClassroomCapacity}");
+        }
     }
 }

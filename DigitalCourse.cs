@@ -16,5 +16,12 @@ namespace CourseManagementSystem_v1
         {
             
         }
+
+        public void DisplayDigitalCourseInfo()
+        {
+            Console.WriteLine($"Course Id: {CourseId}\n Title: {Title}\n Duration: {Duration}\n Price: {Price}\n Course Link: {CourseLink}\n File Size: {FileSize}");
+        }
     }
+
+    
 }
